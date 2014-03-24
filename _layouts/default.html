@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{{ page.title }}</title>
+      <meta name="viewport" content="width=device-width">
+
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="/css/syntax.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="alternate" type="application/rss+xml" title="RSS feed for {{ site.domain }}" href="/feed.xml" />
+
+      <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+   </head>
+   <body>
+      <div class="site">
+         <div class="header">
+            <a href="/"><canvas id="title-canvas" width="195" height="91"></canvas></a>
+         </div>
+         <div class="main-body">
+            <h4>// BLOG</h4>
+            <div class="divider-y"></div>
+            {{ content }}
+         </div>
+         <div class="side-bar">
+            <h4>// ME</h4>
+            <div class="divider-y"></div>
+            <ul>
+               <li><a href="/about-me">about me</a></li>
+               <li><a href="http://twitter.com/tullyrobinson">twitter</a></li>
+               <li><a href="http://github.com/tojrobinson">github</a></li>
+               <a href="mailto:tully@{{ site.domain }}">tully@{{ site.domain }}</a>
+            </ul>
+            <h4>// MY STUFF</h4>
+            <div class="divider-y"></div>
+            <ul>
+               <li>linkwrapper.com (incoming)</li>
+               <li><a href="http://jurassicsystems.com">jurassicsystems.com</a></li>
+               <li><a href="http://github.com/tojrobinson/elements.js">elements.js</a></li>
+            </ul>
+            <h4>// SUBSCRIBE</h4>
+            <div class="divider-y"></div>
+            <li style="text-align: left;">Add your email to get notified when I post something new!</li>
+            <form style="margin-top: 5px;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=tojr/mgTo', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+               <input type="text" style="width:70%;" name="email"/>
+               <input style="padding-left: 5px; padding-right: 5px;" type="submit" value="add"/>
+               <input type="hidden" value="tojr/mgTo" name="uri"/>
+               <input type="hidden" name="loc" value="en_US"/>
+            </form>
+         </div>
+      </div>
+      <div class="footer">
+      </div>
+   </div>
+</body>
+<script src="/js/main.js"></script>
+</html>

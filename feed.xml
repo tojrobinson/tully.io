@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+   <title>Tully</title>
+   <link href="http://{{ site.domain }}"/>
+   <link href="http://{{ site.domain }}/feed.xml" rel="self"/>
+   <updated>{{ site.time | date_to_xmlschema }}</updated>
+   <id>http://{{ site.domain }}</id>
+
+   <author>
+      <name>Tully Robinson</name>
+      <email>tully@{{ site.domain }}</email>
+   </author>
+
+   {% for post in site.posts limit: 3 %}
+   <entry>
+      <title>{{ post.title }}</title>
+      <link href="http://{{ site.domain }}{{ post.url }}"/>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <id>http://{{ site.domain }}{{ post.id }}</id>
+      <content type="html">{{ post.content | xml_escape | truncatewords:75 }}</content>
+   </entry>
+   {% endfor %}
+</feed>
