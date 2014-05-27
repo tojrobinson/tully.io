@@ -1,5 +1,5 @@
 ---
-title: To Create or Not to Create? That is the Question
+title: Modules vs New Code
 author: Tully Robinson
 layout: post
 ---

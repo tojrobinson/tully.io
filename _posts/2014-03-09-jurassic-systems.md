@@ -98,3 +98,5 @@ Lots of great suggestions have come in via the jurassic systems repo on [github]
 * [Enter](http://www.enter.co/cultura-digital/entretenimiento/hacker-logro-recrear-el-sistema-operativo-de-los-pcs-de-jurassic-park/)
 * [Gizmodo](http://es.gizmodo.com/revive-la-mitica-escena-de-hacking-de-jurassic-park-en-1535210227)
 * [Cribeo](http://www.cribeo.com/ciencia_y_tecnologia/2728/sientete-como-en-la-sala-de-control-de-jurassic-park)
+
+

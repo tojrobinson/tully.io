@@ -170,6 +170,11 @@ a:hover   {
 .post-author{
 }
 
+.post-footer {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
 .footer {
    font-size: 80%;
    color: #666;
