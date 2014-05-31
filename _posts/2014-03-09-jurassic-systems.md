@@ -5,7 +5,7 @@ author: Tully Robinson
 layout: post
 ---
 
-The other day I launched my first site: [jurassicsystems.com](http://jurassicsystems.com), a HTML5/Javascript recreation of the original Jurassic Park computer system. I had built the site one week while taking a break from my main project, linkwrapper.com (coming soon); however, other than showing a few friends, it remained in obscurity on my hard disk until this week. Judging from the reactions of my friends, I was sure there had to be some Jurassic Park fans out there that would get a thrill out of it, but I certainly didn't expect the kind of response it ended up getting. In one day, it had been on the front page of reddit and Hacker News, [Jeff Atwood](http://en.wikipedia.org/wiki/Jeff_Atwood) was [tweeting](https://twitter.com/codinghorror/status/440648090177908737) about it, articles were appearing on [Mashable](http://mashable.com/2014/03/03/jurassic-park-computer-system/), [CNET](http://news.cnet.com/8301-17938_105-57619818-1/reenact-samuel-l-jacksons-jurassic-park-hacking-scene/), [The Washington Post](http://www.washingtonpost.com/blogs/the-switch/wp/2014/03/03/hack-into-jurassic-parks-computer-system-with-this-online-recreation/), as well as [many other sites](#articles). There were articles about it in at least ten different languages and within <strong>two days</strong> the site had over <strong>1,000,000</strong> page views and nearly <strong>700,000</strong> unique visitors.
+The other day I launched: [jurassicsystems.com](http://jurassicsystems.com), a HTML5/JavaScript recreation of the original Jurassic Park computer system. I had built the site one week while taking a break from my main project, linkwrapper.com (coming soon); however, other than showing a few friends, it remained in obscurity on my hard disk until this week. Judging from the reactions of my friends, I was sure there had to be some Jurassic Park fans out there that would get a thrill out of it, but I certainly didn't expect the kind of response it ended up getting. In one day, it had been on the front page of reddit and Hacker News, [Jeff Atwood](http://en.wikipedia.org/wiki/Jeff_Atwood) was [tweeting](https://twitter.com/codinghorror/status/440648090177908737) about it, articles were appearing on [Mashable](http://mashable.com/2014/03/03/jurassic-park-computer-system/), [CNET](http://news.cnet.com/8301-17938_105-57619818-1/reenact-samuel-l-jacksons-jurassic-park-hacking-scene/), [The Washington Post](http://www.washingtonpost.com/blogs/the-switch/wp/2014/03/03/hack-into-jurassic-parks-computer-system-with-this-online-recreation/), as well as [many other sites](#articles). There were articles about it in at least ten different languages and within <strong>two days</strong> the site had over <strong>1,000,000</strong> page views and nearly <strong>700,000</strong> unique visitors.
 
 ![cloudflare analytics](http://{{ site.domain }}/img/cloudflareAnalytics.jpg)
 
@@ -20,10 +20,13 @@ Lots of great suggestions have come in via the jurassic systems repo on [github]
 ###<a name="articles"></a>Jurassic Systems Articles:
 * [A. V. Club](http://www.avclub.com/article/jurassic-systems-lets-fans-relive-hacker-scene-jur-201741)
 * [Break](http://www.break.com/article/try-to-crack-the-jurassic-park-code-operating-system-for-dennis-nebry-2583631)
+* [CNET](http://news.cnet.com/8301-17938_105-57619818-1/reenact-samuel-l-jacksons-jurassic-park-hacking-scene/)
 * [Computer Magazine](http://computermagazine.com/2014/03/03/hack-into-jurassic-parks-computer-system-with-this-online-recreation/)
 * [Death and Taxes](http://www.deathandtaxesmag.com/216169/access-the-jurassic-park-computer-system-straight-from-your-browser/)
 * [The Daily Dot](http://www.dailydot.com/technology/jurassic-park-computer-system/)
+* [File Hippo](http://news.filehippo.com/2014/03/hack-jurassic-park-network/)
 * [First Showing](http://www.firstshowing.net/2014/this-is-cool-use-the-computer-system-that-controls-jurassic-park/)
+* [Game Informer](http://www.gameinformer.com/b/news/archive/2014/03/08/hack-nedry-39-s-security-system-in-this-jurassic-park-flash-game.aspx)
 * [Gamemoir](http://gamemoir.com/2014/03/10/daily-diversions-hack-into-jurassic-systems-through-an-online-game/)
 * [Geek](http://www.geek.com/news/run-the-jurassic-park-os-in-your-browser-with-no-fear-of-raptor-attacks-1586585/)
 * [Geeks of Doom](http://www.geeksofdoom.com/2014/03/04/recreate-jurassic-park-hacking-scene-with-jurassic-systems)
@@ -47,11 +50,13 @@ Lots of great suggestions have come in via the jurassic systems repo on [github]
 * [Polygon](http://www.polygon.com/2014/3/7/5482906/hack-into-nedrys-jurassic-park-security-system)
 * [Purple Revolver](http://www.purplerevolver.com/movies/movie-news/123766-jurassic-systems-lets-fans-re-enact-famous-hacking-scene.html)
 * [reddit](http://www.reddit.com/r/movies/duplicates/1zfuzr/jurassic_park_computer_system_in_your_browser/)
-* [Screw Attach](http://www.screwattack.com/news/jurassic-systems-captures-essence-jurassic-park%E2%80%99s-hacker-scene)
+* [Screw Attack](http://www.screwattack.com/news/jurassic-systems-captures-essence-jurassic-park%E2%80%99s-hacker-scene)
 * [Slate](http://www.slate.com/blogs/future_tense/2014/03/03/jurassic_park_computer_system_simulation_lets_you_do_some_early_90s_hacking.html)
 * [Trend Hunter](http://www.trendhunter.com/trends/jurassic-systems)
 * [UPROXX](http://www.uproxx.com/gammasquad/2014/03/unix-system-can-now-play-jurassic-parks-hacking-scenes-real-life/)
 * [The Verge](http://www.theverge.com/2014/3/5/5472808/hack-into-jurassic-parks-computer-network-to-stop-dennis-nedry)
+* [The Washington Post](http://www.washingtonpost.com/blogs/the-switch/wp/2014/03/03/hack-into-jurassic-parks-computer-system-with-this-online-recreation/)
+* [Viral Global News](http://www.viralglobalnews.com/technology/jurassic-park-nedry-style-computer-security-system-emerges/1675/)
 * [WHBL](http://whbl.com/blogs/tech-geek/747/control-the-jurassic-park-computer-from-your-web-browser/)
 * [You Know Whaaa!](http://www.youknowwhaaa.com/2014/03/06/a-web-based-recreation-of-dennis-nedry-encryption-program-from-jurassic-park/)
 
