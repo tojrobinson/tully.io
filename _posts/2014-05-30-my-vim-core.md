@@ -12,9 +12,7 @@ For the sake of brevity, I have omitted some of the basics that you can't really
 <blockquote class="twitter-tweet" align="center" lang="en"><p>I&#39;ve been using Vim for about 2 years now, mostly because I can&#39;t figure out how to exit it.</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/statuses/435555976687923200">February 17, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-There is also a lot of interplay between the various commands on the list, so I have tried to comment the more versatile of commands; however, I certainly haven't accounted for anything near all combinations.
-
-Similarly, I'm just focussing on core commands as opposed to my .vimrc or any of my plugins. This is due to the fact that the usage of these functionality pools tends to rely heavily on the type of content that I'm editing, be it: HTML, C code, or plain text, each one of which harnesses a unique subset of features. Rather than breaking down my analysis into content based subsections, I figured it would be simpler to just monitor my universal command usage for now. Perhaps I'll discuss the rest in a future post.
+Similarly, I'm just focussing on core commands as opposed to my .vimrc or any of the plugins that I use. This is due to the fact that the plugins I'm using will depend heavily on the type of content I'm actually editing be it: HTML, C code, plain text, etc. and, for the most part, my .vimrc is just environmental setup type stuff rather than extensive mapping. Perhaps I'll discuss these in a future post.
 
 That being said and without further ado, here is the subset of commands that have emerged as the most useful to me:
 
