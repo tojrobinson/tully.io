@@ -4,17 +4,19 @@ category: programming
 author: Tully Robinson
 layout: post
 ---
+It's been a while since I've noticed a new Vim command work its way into my core set, so I figured it would be interesting to do some reflection and see where I had arrived after years of Vim use. I wanted to see which commands had become part of my procedural memory and which had been left behind as more novel than useful.
 
-It's been a while since I've noticed a new Vim command work its way into my core set, so I figured it would be interesting to do some reflection and see where I had arrived after years of Vim use. I wanted to see which commands had become part of my procedural memory and which had been left behind as more novel than useful. So, over the last week or so, I monitored my usage (just manually, although if you're interested there is the Vim keylogger: `vim -W ./vim.log`) to see which commands I naturally reached for in order to get things done.
+So, over the last week or so, I monitored my usage (just manually, although if you're interested, you can log your keys with: `vim -W ./vim.log`) to see which commands I naturally reached for in order to get things done. Certainly, I'm aware of more commands; however, for whatever reason when just focussed on the task at hand, it didn't seem like I relied on more than these.
 
 For the sake of brevity, I have omitted some of the basics that you can't really avoid and which would be a part of anybody's working set. Unless, of course, you're @iamdeveloper:
+
 
 <blockquote class="twitter-tweet" align="center" lang="en"><p>I&#39;ve been using Vim for about 2 years now, mostly because I can&#39;t figure out how to exit it.</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/statuses/435555976687923200">February 17, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Similarly, I'm just focussing on core commands as opposed to my .vimrc or any of the plugins that I use. This is due to the fact that the plugins I'm using will depend heavily on the type of content I'm actually editing be it: HTML, C code, plain text, etc. and, for the most part, my .vimrc is just environmental setup type stuff rather than extensive mapping. Perhaps I'll discuss these in a future post.
+Similarly, I'm just focussing on core commands as opposed to my .vimrc or any of the plugins that I use due to the fact these tend to depend more on the type of content I'm actually editing be it: HTML, C code, plain text, etc.
 
-That being said and without further ado, here is the subset of commands that have emerged as the most useful to me:
+That being said and without further ado, here is the subset of commands that have emerged as my base:
 
 ##Moving Around
 <kbd>5</kbd> <kbd>j</kbd> - Move down five lines. While this is in the 'Moving Around' section, the command quantifier could be a section unto itself. Typing a number before a command has the effect of repeating the subsequent command `n` times which can be incredibly useful. I use it with the movement, deletion and, formatting commands quite often.
@@ -27,11 +29,11 @@ That being said and without further ado, here is the subset of commands that hav
 
 <kbd>b</kbd> - Move cursor backward one word.
 
-<kbd>^</kbd> - Move cursor to end of line.
+<kbd>$</kbd> - Move cursor to end of line.
 
 <kbd>0</kbd> - Move cursor to start of line.
 
-<kbd>$</kbd> - Move cursor to start of text.
+<kbd>^</kbd> - Move cursor to start of text.
 
 <kbd>:</kbd> <kbd>4</kbd> <kbd>2</kbd> - Jump to the 42nd line. I use this to jump to an approximate section of the document often.
 
@@ -39,7 +41,7 @@ That being said and without further ado, here is the subset of commands that hav
 
 <kbd>%</kbd> - Jump to match. This is useful when trying to find the opening and closing braces of large functions that might not fit in a single view or those deeply nested callback functions. You simply place the cursor over the opening or closing brace that you wish to match and hit <kbd>%</kbd> to jump to the partnering brace. This can also be done with parenthesis, square brackets, etc.
 
-<kbd>/</kbd>\<searchTerm\> - Search document. After hitting enter, the first search match will be highlighted and the cursor will be at the start of it. From here you can jump to the next match with <kbd>n</kbd> or to the previous match with <kbd>Shift</kbd> + <kbd>n</kbd>. Once I have finished with the search, to clear the highlighted sections, I will just type <kbd>/</kbd> followed by nonsense, i.e., search for something that returns no results.
+<kbd>/</kbd>\<searchTerm\> - Search document. After hitting enter, the first search match will be highlighted and the cursor will be at the start of it. From here you can jump to the next match with <kbd>n</kbd> or to the previous match with <kbd>Shift</kbd> + <kbd>n</kbd>. Other than the ovious use case, I use search to jump to a location on the screen that I can see by typing the first few characters of where I want to go; it's sometimes quicker than using the basic movement commands
 
 ##Inserting
 You are constantly jumping in and out of insert mode when using Vim, as such, commands combining movement and insertion characteristics are extremely useful and get a lot of use.
@@ -92,7 +94,7 @@ You are constantly jumping in and out of insert mode when using Vim, as such, co
 <kbd><</kbd> <kbd><</kbd> - Shift line one indent left.
 
 ## Prepend to Multiple Lines
-I use this sometimes to comment out blocks of code in languages where a `/* multi-line comment */` isn't available; such is the case with many scripting languages. Starting with the cursor at the beginning of the first line you intend to comment out:
+I use this quite often to comment out blocks of code in languages where a `/* multi-line comment */` isn't available; such is the case with many scripting languages. Starting with the cursor at the beginning of the first line you intend to comment out:
 
 1. <kbd>Ctrl</kbd> + <kbd>v</kbd>
 2. Move the cursor down (or up) as many lines as you wish to comment out.
@@ -103,7 +105,7 @@ I use this sometimes to comment out blocks of code in languages where a `/* mult
 Whatever you typed should now be inserted before each of the selected lines.
 
 ##Command Line Mode
-`:vsplit <document>` - Split screen vertically with another document. Once the screen has been split, you can then jump between the two by typing <kbd>Ctrl</kbd> + <kbd>w</kbd> and then <kbd>h</kbd> for the document on the left, or <kbd>l</kbd> for the document on the right; <kbd>Shift</kbd> + <kbd>h</kbd> or <kbd>Shift</kbd> + <kbd>l</kbd> will switch the position of the screens. You can also split the screen horizontally with `:split <document>`; however, I tend to prefer the vertical partition.
+`:vsplit <document>` - Split screen vertically with another document. Once the screen has been split, you can then jump between the two by typing <kbd>Ctrl</kbd> + <kbd>w</kbd> and then <kbd>h</kbd> for the document on the left, or <kbd>l</kbd> for the document on the right; <kbd>Shift</kbd> + <kbd>h</kbd> or <kbd>Shift</kbd> + <kbd>l</kbd> will switch the position of the documents. You can also split the screen horizontally with `:split <document>`; however, I tend to prefer the vertical partition.
 
 `:%s/foo/bar/g` - Replace all instances of 'foo' with 'bar'.
 
