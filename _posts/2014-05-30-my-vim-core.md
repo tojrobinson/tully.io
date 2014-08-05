@@ -41,7 +41,7 @@ That being said and without further ado, here is the subset of commands that hav
 
 <kbd>%</kbd> - Jump to match. This is useful when trying to find the opening and closing braces of large functions that might not fit in a single view or those deeply nested callback functions. You simply place the cursor over the opening or closing brace that you wish to match and hit <kbd>%</kbd> to jump to the partnering brace. This can also be done with parenthesis, square brackets, etc.
 
-<kbd>/</kbd>\<searchTerm\> - Search document. After hitting enter, the first search match will be highlighted and the cursor will be at the start of it. From here you can jump to the next match with <kbd>n</kbd> or to the previous match with <kbd>Shift</kbd> + <kbd>n</kbd>. Other than the ovious use case, I use search to jump to a location on the screen that I can see by typing the first few characters of where I want to go; it's sometimes quicker than using the basic movement commands
+<kbd>/</kbd>\<searchTerm\> - Search document. After hitting enter, the first search match will be highlighted and the cursor will be at the start of it. From here you can jump to the next match with <kbd>n</kbd> or to the previous match with <kbd>Shift</kbd> + <kbd>n</kbd>. Other than the obvious use case, I use search to jump to a location on the screen that I can see by typing the first few characters of where I want to go; it's sometimes quicker than using the basic movement commands
 
 ##Inserting
 You are constantly jumping in and out of insert mode when using Vim, as such, commands combining movement and insertion characteristics are extremely useful and get a lot of use.

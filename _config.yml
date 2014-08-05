@@ -1,7 +1,7 @@
 name: tully
 markdown: redcarpet
 redcarpet:
-  extensions: ["tables"]
+   extensions: ["tables"]
 pygments: true
 permalink: /:title
 domain: tojr.org
