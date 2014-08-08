@@ -4,4 +4,4 @@ redcarpet:
    extensions: ["tables"]
 pygments: true
 permalink: /:title
-domain: tojr.org
+domain: tully.io
