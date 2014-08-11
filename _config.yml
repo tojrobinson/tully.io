@@ -1,7 +1,5 @@
 name: tully
 markdown: redcarpet
-redcarpet:
-   extensions: ["tables"]
 pygments: true
 permalink: /:title
 domain: tully.io
