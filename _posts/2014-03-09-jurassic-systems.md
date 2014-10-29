@@ -54,6 +54,7 @@ Lots of great suggestions have come in via the jurassic systems repo on [github]
 * [reddit](http://www.reddit.com/r/movies/duplicates/1zfuzr/jurassic_park_computer_system_in_your_browser/)
 * [Screw Attack](http://www.screwattack.com/news/jurassic-systems-captures-essence-jurassic-park%E2%80%99s-hacker-scene)
 * [Slate](http://www.slate.com/blogs/future_tense/2014/03/03/jurassic_park_computer_system_simulation_lets_you_do_some_early_90s_hacking.html)
+* [Tech Hive](http://www.techhive.com/article/2104640/biff-tannens-revenge-you-will-never-ever-get-a-hoverboard.html)
 * [Trend Hunter](http://www.trendhunter.com/trends/jurassic-systems)
 * [UPROXX](http://www.uproxx.com/gammasquad/2014/03/unix-system-can-now-play-jurassic-parks-hacking-scenes-real-life/)
 * [The Verge](http://www.theverge.com/2014/3/5/5472808/hack-into-jurassic-parks-computer-network-to-stop-dennis-nedry)
