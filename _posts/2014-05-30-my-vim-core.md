@@ -4,19 +4,14 @@ category: programming
 author: Tully Robinson
 layout: post
 ---
-It's been a while since I've noticed a new Vim command work its way into my core set, so I figured it would be interesting to do some reflection and see where I had arrived after years of Vim use. I wanted to see which commands had become part of my procedural memory and which had been left behind as more novel than useful.
+It's been a while since I've noticed a new Vim command work its way into my core set, so I figured it would be interesting to do some reflection and see where I had arrived after years of Vim use. I wanted to see which commands had become part of my procedural memory and which had been left behind, being more novel than useful.
 
-So, over the last week or so, I monitored my usage (just manually, although if you're interested, you can log your keys with: `vim -W ./vim.log`) to see which commands I naturally reached for in order to get things done. Certainly, I'm aware of more commands; however, for whatever reason when just focussed on the task at hand, it didn't seem like I relied on more than these.
+Over the last week or so, I monitored my usage (just manually, although if you're interested: `vim -W ./vim.log`) to see which commands I naturally reached for in order to get things done. Certainly, I'm aware of more commands; however and for whatever reason, when just focussing on the task at hand, it didn't seem like I relied on more than these.
 
 For the sake of brevity, I have omitted some of the basics that you can't really avoid and which would be a part of anybody's working set. Unless, of course, you're @iamdeveloper:
 
-
 <blockquote class="twitter-tweet" align="center" lang="en"><p>I&#39;ve been using Vim for about 2 years now, mostly because I can&#39;t figure out how to exit it.</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/statuses/435555976687923200">February 17, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-Similarly, I'm just focussing on core commands as opposed to my .vimrc or any of the plugins that I use due to the fact these tend to depend more on the type of content I'm actually editing be it: HTML, C code, plain text, etc.
-
-That being said and without further ado, here is the subset of commands that have emerged as my base:
 
 ##Moving Around
 <kbd>5</kbd> <kbd>j</kbd> - Move down five lines. While this is in the 'Moving Around' section, the command quantifier could be a section unto itself. Typing a number before a command has the effect of repeating the subsequent command `n` times which can be incredibly useful. I use it with the movement, deletion and, formatting commands quite often.
