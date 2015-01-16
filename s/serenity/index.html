@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="shortcut icon" href="/favicon.ico">
+      <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <title>Serenity</title>
+      <style>
+         * {
+            padding: 0;
+            margin: 0;
+         }
+
+         body {
+            background: black;
+         }
+
+         .journey {
+            height: 100%;
+            width: 100%;
+            background-image: url('cageJourney.gif');
+            background-size: cover;
+         }
+
+         .music {
+            position: absolute;
+            left: -99px;
+            bottom: -99px;
+         }
+
+         #loading {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            margin-left: -50px;
+         }
+      </style>
+   </head>
+   <body>
+      <img id="loading" src="loading.gif">
+      <div class="music" id="music"></div>
+      <script type="text/javascript">
+         var preload = new Image();
+         var yt = document.createElement('script');
+         var target = document.getElementsByTagName('script')[0];
+         var gif = document.createElement('img');
+         var loading = document.getElementById('loading');
+
+         yt.src = 'https://www.youtube.com/iframe_api';
+         target.parentNode.insertBefore(yt, target);
+         preload.src = gif.src = 'cageJourney.gif';
+         gif.className = 'journey';
+
+         setTimeout(function() {
+            loading.parentNode.removeChild(loading);
+            document.body.appendChild(gif);
+         }, 4000);
+
+         window.onYouTubeIframeAPIReady = function() {
+            new YT.Player('music', {
+               height: '100',
+               width: '100',
+               wmode: 'opaque',
+               videoId: 'bV-hSgL1R74',
+               events: {
+                  'onReady': function(e) {
+                     e.target.playVideo();
+                  },
+                  'onStateChange': function(e) {
+                     if (e.data === YT.PlayerState.ENDED) {
+                        e.target.playVideo();
+                     }
+                  }
+               }
+            });
+         }
+      </script>
+   </body>
+</html>
