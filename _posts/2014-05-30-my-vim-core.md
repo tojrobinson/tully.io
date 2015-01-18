@@ -131,6 +131,6 @@ I said I would just be outlining my core set of commands, so consider these as a
 
 Well, there it is... These would account for around 90-95% of my activity in the Vim editor and haven't really changed or grown in about a year or so now. Perhaps I'm experiencing the zero gradient edge of the Vi learning curve:
 
-<img src="http://mrozekma.com/editor-learning-curve.png" style="display:block; margin: 0 auto;" />
+![learning curve](/img/learningCurve.png)
 
 That, or I'm just not spamming the cheat sheets like I used to.
