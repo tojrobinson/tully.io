@@ -88,7 +88,7 @@ This should run for around 10-20 minutes depending on your environment and will 
 The next step is to install the built targets on your system. The `--prefix` flag allows you to specify a parent directory for the binaries. Here we install them using a `/usr` prefix meaning, e.g, the `mongod` command will be installed to `/usr/bin/mongod` (this is recommended as it means you wont need to alter the configuration scripts later).
 
 ```bash
-scons -j 4 --64 --ssl --prefix=/usr install
+sudo scons -j 4 --64 --ssl --prefix=/usr install
 ```
 
 You should see a slew of `chmod 755 /usr/bin/...` lines as output and, again, hopefully a `scons: done building targets.` at the end with no errors. Running:

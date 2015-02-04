@@ -11,20 +11,13 @@
       <link rel="stylesheet" href="/css/main.css">
       <link rel="alternate" type="application/rss+xml" title="RSS feed for {{ site.domain }}" href="/feed.xml" />
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-
-      <script src="/js/modernizr-2.6.2.min.js"></script>
    </head>
    <body>
       <div class="site">
          <div class="header">
-            <a href="/"><canvas id="title-canvas" width="195" height="91"></canvas></a>
+            <a href="/"><canvas id="title-canvas" width="195" height="91">Tully</canvas></a>
          </div>
-         <div class="main-body">
-            <h4>// BLOG</h4>
-            <div class="divider-y"></div>
-            {{ content }}
-         </div>
-         <div class="side-bar">
+         <div id="side-bar">
             <h4>// ME</h4>
             <div class="divider-y"></div>
             <ul>
@@ -37,22 +30,30 @@
             <h4>// MY STUFF</h4>
             <div class="divider-y"></div>
             <ul>
-               <li>linkwrapper.com (incoming)</li>
+               <li><a href="https://linkwrapper.com">linkwrapper.com</a></li>
                <li><a href="http://jurassicsystems.com">jurassicsystems.com</a></li>
                <li><a href="https://github.com/tojrobinson/elman">elman</a></li>
             </ul>
-            <h4>// SUBSCRIBE</h4>
+            <div class="subscribe">
+               <h4>// SUBSCRIBE</h4>
+               <div class="divider-y"></div>
+               <li style="text-align: left;">Add your email to get notified when I post something new!</li>
+               <form style="margin-top: 5px;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=tojr/mgTo', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+                  <input type="text" name="email"/>
+                  <input style="padding-left: 5px; padding-right: 5px;" type="submit" value="add"/>
+                  <input type="hidden" value="tojr/mgTo" name="uri"/>
+                  <input type="hidden" name="loc" value="en_US"/>
+               </form>
+            </div>
+         </div>
+         <div id="main-body">
+            <h4>// BLOG</h4>
             <div class="divider-y"></div>
-            <li style="text-align: left;">Add your email to get notified when I post something new!</li>
-            <form style="margin-top: 5px;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=tojr/mgTo', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-               <input type="text" style="width:70%;" name="email"/>
-               <input style="padding-left: 5px; padding-right: 5px;" type="submit" value="add"/>
-               <input type="hidden" value="tojr/mgTo" name="uri"/>
-               <input type="hidden" name="loc" value="en_US"/>
-            </form>
+            {{ content }}
          </div>
       </div>
    </div>
 </body>
+<script sr
 <script src="/js/main.js"></script>
 </html>

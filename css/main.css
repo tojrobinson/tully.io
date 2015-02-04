@@ -1,17 +1,8 @@
 @font-face {
-   font-family: 'Geometria';
-   src: url('/fonts/Geometria.eot');
-   src: url('/fonts/Geometria.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Geometria.woff') format('woff'),
-        url('/fonts/Geometria.ttf') format('truetype'),
-        url('/fonts/Geometria.svg#Geometria') format('svg');
+   font-family: 'Open Sans';
+   src: url('/fonts/OpenSans.ttf') format('truetype');
    font-weight: normal;
    font-style: normal;
-}
-
-@font-face {
-   font-family: 'Open Sans';
-   src: url('/fonts/OpenSans.ttf');
 }
 
 * {
@@ -42,6 +33,10 @@ h1, h2, h3, h4, h5 {
 .post h5 {
    margin-top: 30px;
    margin-bottom: 20px;
+}
+
+h1 {
+   line-height: 35px;
 }
 
 input {
@@ -98,7 +93,7 @@ blockquote {
    color: #777;
 }
 
-.side-bar li {
+#side-bar li {
    list-style: none;
 }
 
@@ -132,19 +127,19 @@ blockquote {
 /*   text-align: justify;*/
 }
 
-.main-body {
+#main-body {
    position: relative;
    float: left;
    width: 72%;
 }
 
-.side-bar {
+#side-bar {
    float: right;
    position: relative;
    width: 23%;
 }
 
-.side-bar ul {
+#side-bar ul {
    margin-bottom: 15px;
 }
 
@@ -159,9 +154,6 @@ blockquote {
    text-decoration: none;
    margin-top: 20px;
    margin-bottom: 10px;
-}
-
-.post-title {
 }
 
 .title {
@@ -182,7 +174,7 @@ blockquote {
    font-size: 14px;
    color: #aaaaaa;
    display: inline-block;
-   margin-top: 5px;
+   margin-top: -5px;
 }
 
 .post-author{
@@ -219,10 +211,6 @@ blockquote {
    border: 0;
 }
 
-.post pre {
-   padding: 20px;
-}
-
 .post ul, .post ol {
    padding-left: 30px;
 }
@@ -235,6 +223,25 @@ p code {
    font-size: 14px;
 }
 
-.post pre code {
-   border: none;
+pre {
+   white-space: pre;
+   overflow: auto;
+   padding: 20px;
+}
+
+.subscribe input[type=text] {
+   width: 70%;
+   max-width: 200px;
+}
+
+@media (max-width: 700px) {
+   #main-body,
+   #side-bar {
+      display: block;
+      width: 100%;
+   }
+
+   .subscribe {
+      margin-bottom: 20px; 
+   }
 }
