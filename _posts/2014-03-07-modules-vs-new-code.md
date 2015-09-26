@@ -1,0 +1,22 @@
+---
+title: Modules vs New Code
+author: Tully Robinson
+layout: post
+---
+When tasked with building just about anything, integral to the question of **how** to build it is **how much** of it do I actually need to build and how much is already done for me? The same goes for writing code; typically a lot of functionality you aim to provide in whatever application has already been done by someone else or is already provided in some form. As such, a very common decision point is whether to implement or reuse.
+
+Sometimes the decision is easy, e.g., if you plan to incorporate a data store of some kind, it's unlikely that implementing your own DBMS would be the best course of action. For the other times, it can be harder.
+
+Clearly, using an existing package—by design—has the potential to cut out a large chunk of time that would otherwise need to be spent on implementation. However, there is, of course, the time you need to spend vetting potential packages and then homogenising your code with the chosen package's interface. You must also consider the potential for becoming dependant on external code which may itself get in the way of progress as you waste time working around the design impositions it brings with it. However, sometimes the choice is easy, the package's incorporation is seamless and everything is happy—hours of time is quickly gained.
+
+On the other hand, self implementation has a guaranteed time overhead and also increases the size of the code base you now have to maintain moving forward. Since, as mortals, we are all afforded a finite amount of time, I feel that an intuition in this particular situation is an asset worth having.
+
+Historically, I have had a strong inclination towards implementing everything myself, often at the expense of productivity. Perhaps it comes from a background in C or just the scientific mindset of needing to understand something completely, including the minutia (or maybe it's just plain nubery); in any case, it has been the Achilles heel to my productivity and often the road block in the way of finishing a project. As such, I have committed to writing this post as a way of reminding myself to try and direct my creative urges to where they will realise the greatest benefit.
+
+A particularly noob example of this was when I first started getting into JavaScript. I was faced with the simple task of sorting a list of DOM elements and for some reason I was convinced that writing my own sort would be faster and therefore important (Stallman knows why! Also, see [premature optimisation](http://c2.com/cgi/wiki?PrematureOptimization)). When my quicksort implementation proved indistinguishable or slightly slower than JavaScript's `Array.prototype.sort`, I implemented timsort only to achieve a similar result. A while later, I yielded to simply using the native sort method and moved on having achieved almost no forward momentum.
+
+That said, I certainly don't intend to eliminate my superfluous implementation binges all together as they often lead to greater understanding, and therefore have an educational value. Instead, I wish to improve my 'pragmatic average' by redirecting the majority of these inklings to areas where the greatest cost-benefit ratio is realised. By spending more of my time implementing only that which is necessary or particularly intriguing—at least trying to—over time, I figure I am maximising the effect of my creative efforts. For everything else, the use of existing modules should be favoured.
+
+In terms of actually effecting this pursuit, while I suspect it's a highly qualitative matter, I guess the main determinants would be something along the lines of: urgency, my overall purpose, and the relative worth of the sub-project (unnecessary implementation). I figure any given sub-project will have a kind of weighted score based on its intrinsic value (whether it's derived from necessity or an interest factor) and the time involved in implementing it. Given this idea, the greater the urgency to finish and the farther the sub-project strays from the overall purpose of the original project, the higher the sub-project's score aught to be.
+
+In any case, I suspect that just being mindful of the situation and my previous inclinations is enough to at least improve my average. Next time I feel that JavaScript is just too much of an abstraction and writing my cat website in assembly seems reasonable, I'll try to re-evaluate the situation bearing within me the thoughts of this post.
